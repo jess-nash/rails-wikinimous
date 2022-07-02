@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>
+    <%= link_to 'Submit New Article', new_article_path %>
+  </h2>
+  <ul>
+    <% @articles.each do |article| %>
+      <li>
+        <%= link_to article.title, article_path(article)%>
+      </li>
+    <% end %>
+  </ul>
+</div>

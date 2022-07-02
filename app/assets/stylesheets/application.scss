@@ -1,5 +1,56 @@
 @import "bootstrap/scss/bootstrap";
 
-li {
-  list-style: none;
+// li {
+//   list-style: none;
+// }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+a.fa-solid:hover {
+  text-decoration-color: #333333;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: #777;
+}
+
+article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+// .navbar {
+//   position: relative;
+//   min-height: 50px;
+//   margin-bottom: 20px;
+//   border: 1px solid transparent;
+//   background-color: #f8f8f8;
+//   border-color: #e7e7e7;
+// }
+
+// .navbar-brand {
+//   float: left;
+//   height: 50px;
+//   padding: 15px 15px;
+//   font-size: 18px;
+//   line-height: 20px;
+// }
+
+// .container-fluid {
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }

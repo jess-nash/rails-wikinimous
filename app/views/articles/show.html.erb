@@ -1,7 +1,21 @@
-<h2><%= @article.title %></h2>
-
-<p><%= @article.content %></p>
-
-<%= link_to 'Back', articles_path %>
-<%= link_to 'Edit', edit_article_path %>
-<%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <article>
+        <h1>
+          <%= @article.title %>
+          <small>
+            <%= link_to edit_article_path do %>
+                <i class="fa-solid fa-pencil"></i>
+            <% end %>
+            <%= link_to article_path(@article), method: :delete, data: {confirm: "Are you sure?"} do %>
+              <i class="fa-solid fa-trash-can"></i>
+            <% end %>
+         </small>
+        </h1>
+        <hr>
+        <p><%= @article.content %></p>
+      </article>
+    </div>
+  </div>
+</div>
